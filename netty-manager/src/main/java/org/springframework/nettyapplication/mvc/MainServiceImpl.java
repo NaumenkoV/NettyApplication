@@ -9,9 +9,6 @@ import com.nettyapplication.dao.impl.UserDAOImpl;
 import com.nettyapplication.entity.Connection;
 import com.nettyapplication.entity.URLRedirection;
 import com.nettyapplication.entity.User;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,8 +16,6 @@ import java.util.List;
  * Created by Вадим on 17.08.2014.
  */
 
-@Service
-@Transactional(isolation = Isolation.READ_COMMITTED)
 public class MainServiceImpl implements MainService {
 
     private static MainService mainService = new MainServiceImpl();
